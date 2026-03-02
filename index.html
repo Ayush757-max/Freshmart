@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart | Grocery Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a href="#home" class="logo">FreshMart</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Fresh, Fast, Friendly</p>
+      <h1>Your Neighborhood Grocery Store, Online</h1>
+      <p>
+        Discover farm-fresh produce, pantry staples, and daily essentials delivered with care.
+      </p>
+      <a href="#shop" class="btn">Start Shopping</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="shop">
+      <div class="section-head">
+        <h2>Shop</h2>
+        <p>Explore our most loved grocery categories.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Fresh Produce</h3>
+          <p>Crisp vegetables and juicy fruits sourced daily.</p>
+        </article>
+        <article class="card">
+          <h3>Dairy & Bakery</h3>
+          <p>Milk, cheese, bread, and treats for every morning.</p>
+        </article>
+        <article class="card">
+          <h3>Pantry Essentials</h3>
+          <p>Rice, grains, spices, and everything in between.</p>
+        </article>
+        <article class="card">
+          <h3>Healthy Choices</h3>
+          <p>Organic and low-sugar options for mindful living.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="about">
+      <div class="section-head">
+        <h2>About Us</h2>
+      </div>
+      <p class="about-text">
+        At FreshMart, we believe grocery shopping should be simple, affordable, and enjoyable. Our
+        team works with trusted suppliers to bring high-quality products to your doorstep while
+        keeping prices fair and service personal.
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you.</p>
+      </div>
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea rows="5" placeholder="How can we help?"></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FreshMart. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
